@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+             x:Class="RgPopupDemo.PopupPage">
+    <pages:PopupPage.Animation>
+        <animations:MoveAnimation 
+     PositionIn="Bottom"
+     PositionOut="Bottom"
+     DurationIn="500"
+     DurationOut="500"
+      EasingIn="BounceIn"
+      EasingOut="BounceIn"
+            />
+    </pages:PopupPage.Animation>
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Frame BackgroundColor="White" Margin="20"  HeightRequest="300"  CornerRadius="20" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand">
+                <StackLayout VerticalOptions="Center">
+                    <Label VerticalTextAlignment="Center" Text="This Is Rg Popup Demo With Animation Effect"  />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</pages:PopupPage>
